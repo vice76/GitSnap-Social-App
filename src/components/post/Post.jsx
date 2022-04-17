@@ -1,4 +1,5 @@
 import React from "react";
+import { Users } from "../../dummyData";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import "./post.css";
 
@@ -10,11 +11,13 @@ export default function Post({ post }) {
         <div className="postTop">
           <div className="postTopLeft">
             <img
-              src="/assests/person/1.jpeg"
+              src={Users.filter((u) => u.id === post?.userId)[0].profilePicture}
               alt=""
               className="postProfileImg"
             />
-            <span className="postUsername">Arpit Yadav</span>
+            <span className="postUsername">
+              {Users.filter((u) => u.id === post?.userId)[0].username}
+            </span>
             <span className="postDate">{post.date}</span>
           </div>
           <div className="postTopRight">

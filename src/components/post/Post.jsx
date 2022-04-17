@@ -2,7 +2,8 @@ import React from "react";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import "./post.css";
 
-export default function Post() {
+export default function Post({ post }) {
+  console.log(post);
   return (
     <div className="post">
       <div className="postWrapper">
@@ -14,24 +15,24 @@ export default function Post() {
               className="postProfileImg"
             />
             <span className="postUsername">Arpit Yadav</span>
-            <span className="postDate">5 mins ago</span>
+            <span className="postDate">{post.date}</span>
           </div>
           <div className="postTopRight">
             <MoreVertIcon />
           </div>
         </div>
         <div className="postCenter">
-          <span className="postText">Hey! Its my first post</span>
-          <img src="assests/post/1.jpeg" alt="" className="postImg" />
+          <span className="postText">{post?.desc}</span>
+          <img src={post.photo} alt="" className="postImg" />
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
             <img className="likeIcon" src="assests/like.png" alt="" />
             <img className="likeIcon" src="assests/heart.png" alt="" />
-            <span className="postLikeCounter">9 people like it</span>
+            <span className="postLikeCounter">{post.like}</span>
           </div>
           <div className="postBottomRight">
-            <span className="postCommentText">9 comments</span>
+            <span className="postCommentText">{post.comment}</span>
           </div>
         </div>
       </div>

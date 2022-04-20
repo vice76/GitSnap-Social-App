@@ -64,57 +64,6 @@ export default function Sidebar() {
             <span className="sidebarFriendName">Jane Doe</span>
           </li>
         </ul>
-
-        <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img
-              src="/assests/person/2.jpeg"
-              alt="Person 1"
-              className="sidebarFriendImg"
-            />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-        </ul>
-        <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img
-              src="/assests/person/2.jpeg"
-              alt="Person 1"
-              className="sidebarFriendImg"
-            />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-        </ul>
-        <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img
-              src="/assests/person/2.jpeg"
-              alt="Person 1"
-              className="sidebarFriendImg"
-            />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-        </ul>
-        <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img
-              src="/assests/person/2.jpeg"
-              alt="Person 1"
-              className="sidebarFriendImg"
-            />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-        </ul>
-        <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img
-              src="/assests/person/2.jpeg"
-              alt="Person 1"
-              className="sidebarFriendImg"
-            />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-        </ul>
       </div>
     </div>
   );

@@ -8,6 +8,8 @@ import BookmarkIcon from "@mui/icons-material/Bookmark";
 import GroupIcon from "@mui/icons-material/Group";
 import ChatIcon from "@mui/icons-material/Chat";
 import PlayCircleFilledIcon from "@mui/icons-material/PlayCircleFilled";
+import { Users } from "../../dummyData";
+import CloseFriend from "../closeFriend/CloseFriend";
 import "./sidebar.css";
 
 export default function Sidebar() {
@@ -55,14 +57,9 @@ export default function Sidebar() {
         <button className="sidebarButton">Show More</button>
         <hr className="sidebarHr" />
         <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img
-              src="/assests/person/2.jpeg"
-              alt="Person 1"
-              className="sidebarFriendImg"
-            />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
+          {Users.map((u) => (
+            <CloseFriend key={u.id} user={u} />
+          ))}
         </ul>
       </div>
     </div>

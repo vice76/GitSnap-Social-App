@@ -2,7 +2,6 @@ import React, { useRef, useContext } from "react";
 import "./login.css";
 import { AuthContext } from "../../context/AuthContext";
 import CircularProgress from "@mui/material/CircularProgress";
-import Box from "@mui/material/Box";
 import { loginCall } from "../../apiCalls";
 
 export default function Login() {
@@ -12,7 +11,6 @@ export default function Login() {
 
   const handleClick = (e) => {
     e.preventDefault();
-    // console.log(email.current.value);
     loginCall(
       { email: email.current.value, password: password.current.value },
       dispatch
@@ -49,7 +47,6 @@ export default function Login() {
               {isFetching ? (
                 <CircularProgress color="secondary" size="20px" />
               ) : (
-                // <h1>loading...</h1>
                 "Log In"
               )}
             </button>
@@ -58,7 +55,6 @@ export default function Login() {
               {isFetching ? (
                 <CircularProgress color="secondary" size="20px" />
               ) : (
-                // <h1>loading...</h1>
                 "Create a New Account"
               )}
             </button>

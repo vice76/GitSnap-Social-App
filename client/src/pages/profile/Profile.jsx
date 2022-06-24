@@ -17,7 +17,6 @@ export default function Profile() {
       const res = await axios.get(
         `http://localhost:8800/api/users/?username=${username}`
       );
-      // console.log(res);
       setUser(res.data);
     };
     fetchUser();
